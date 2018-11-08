@@ -1,0 +1,15 @@
+<head>
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- misc -->
+    {%- if page.is_post %}<meta name="date" content="{{ page.date | date_to_string }}">{% endif %}
+    <link rel="me" href="mailto:{{ site.email }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/github.css" | prepend: site.baseurl }}">
+
+    <title>{%- if page.title %}{{ site.title | escape }} - {{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+</head>

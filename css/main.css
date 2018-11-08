@@ -1,0 +1,62 @@
+body {
+    color: #333;
+}
+
+main {
+    max-width: 35em;
+    padding: 1em 5vw 1em;
+    margin: 0 auto;
+}
+
+nav {
+    background: #eee;
+    padding: 0.5em;
+    display: inline-block;
+}
+
+pre code {
+    padding: 1em;
+    overflow: auto;
+    white-space: pre-wrap;
+    display: block;
+    background: #eee;
+}
+
+article p {
+    text-align: justify;
+}
+
+article header {
+    text-align: center;
+}
+
+hr {
+    margin: 3em auto;
+    width: 30%;
+    background-color: none;
+    border-top: 3px double #333;
+    border-bottom: 1px solid #333;
+    border-left: 0;
+    border-right: 0;
+    height: 1px;
+}
+
+p code {
+    color: green;
+    font-size: large;
+}
+
+img {
+    border-radius: 3px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+ul.posts time, article header time {
+    font-style: italic;
+}
+
+ul.posts time {
+    float: right;
+}

@@ -1,0 +1,29 @@
+title: Casey Weed
+email: casey@caseyweed.com
+# description: >-
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: battleroid
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# exclude: {}
