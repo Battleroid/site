@@ -1,11 +1,14 @@
 body {
     color: #333;
+    font-size: 18px;
+    font-family: serif;
 }
 
 main {
     max-width: 35em;
     padding: 1em 5vw 1em;
     margin: 0 auto;
+    line-height: 1.4;
 }
 
 nav {
@@ -20,10 +23,16 @@ pre code {
     white-space: pre-wrap;
     display: block;
     background: #eee;
+    font-size: 14px;
 }
 
 article p {
     text-align: justify;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    text-decoration: none;
+    color: #333;
 }
 
 article header {
@@ -33,7 +42,7 @@ article header {
 hr {
     margin: 3em auto;
     width: 30%;
-    background-color: none;
+    background: none;
     border-top: 3px double #333;
     border-bottom: 1px solid #333;
     border-left: 0;
@@ -41,9 +50,9 @@ hr {
     height: 1px;
 }
 
-p code {
+p code, li code {
     color: green;
-    font-size: large;
+    font-size: 16px;
 }
 
 img {
@@ -59,4 +68,8 @@ ul.posts time, article header time {
 
 ul.posts time {
     float: right;
+}
+
+blockquote {
+    font-style: italic;
 }
