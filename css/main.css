@@ -26,7 +26,7 @@ pre code {
     font-size: 14px;
 }
 
-article p {
+section p, article p {
     text-align: justify;
 }
 
