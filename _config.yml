@@ -25,5 +25,6 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      author: "Casey Weed"
 
 # exclude: {}

@@ -61,14 +61,25 @@ img {
     max-width: 100%;
     display: block;
     margin: 0 auto;
+    text-align: center;
 }
 
 ul.posts time, article header time {
     font-style: italic;
 }
 
+ul.posts li div {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+ul.posts a {
+    flex-grow: 2;
+}
+
 ul.posts time {
-    float: right;
+    flex-shrink: 0;
 }
 
 blockquote {
@@ -76,9 +87,13 @@ blockquote {
 }
 
 .caption {
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
     font-style: italic;
     width: 80%;
     margin: 1em auto;
+}
+
+div.footnotes li:target {
+    background: lemonchiffon;
 }
