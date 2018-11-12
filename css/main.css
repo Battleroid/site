@@ -2,13 +2,13 @@ body {
     color: #333;
     font-size: 18px;
     font-family: serif;
+    line-height: 1.2;
 }
 
 main {
     max-width: 35em;
     padding: 1em 5vw 1em;
     margin: 0 auto;
-    line-height: 1.4;
 }
 
 nav {
@@ -87,7 +87,6 @@ blockquote {
 }
 
 .caption {
-    font-size: 18px;
     text-align: center;
     font-style: italic;
     width: 80%;
@@ -96,4 +95,14 @@ blockquote {
 
 div.footnotes li:target {
     background: lemonchiffon;
+}
+
+sup, sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+
+sub {
+  top: 0.4em;
 }
