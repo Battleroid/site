@@ -115,3 +115,12 @@ sup, sub {
 sub {
   top: 0.4em;
 }
+
+@media print {
+    main {
+        max-width: 100%;
+    }
+    pre code {
+        white-space: pre-wrap;
+    }
+}
