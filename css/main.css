@@ -1,20 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700');
+
 body {
     color: #333;
-    font-size: 18px;
-    font-family: serif;
-    line-height: 1.2;
+    font-size: 1.125rem;
+    font-family: Roboto, sans-serif;
+    line-height: 1.4;
 }
 
 main {
-    max-width: 35em;
-    padding: 1em 5vw 1em;
+    max-width: 35rem;
+    padding: 1rem 5vw 1rem;
     margin: 0 auto;
 }
 
 nav {
     background: #eee;
-    padding: 0.5em;
+    padding: 0.5rem;
     display: inline-block;
+}
+
+pre, code {
+    font-family: "Roboto Mono", monospace;
+}
+
+pre code, img {
+    border-radius: 3px;
 }
 
 pre code {
@@ -40,8 +50,8 @@ article header {
     text-align: center;
 }
 
-hr {
-    margin: 3em auto;
+header + hr {
+    margin: 3rem auto;
     width: 30%;
     background: none;
     border-top: 3px double #333;
@@ -57,7 +67,6 @@ p code, li code {
 }
 
 img {
-    border-radius: 3px;
     max-width: 100%;
     display: block;
     margin: 0 auto;
