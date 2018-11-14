@@ -34,4 +34,4 @@ Reboot back into the standard installation. Then download and follow the instruc
 
 That's it, everything should be just fine. ~~The only problem I have currently is sleep does not work. However it's irrelevant since it's only used for classwork and watching videos, other than it's off.~~ Installing the 3rd Party SATA kext fixed the issue as the internal drive was no longer seen as an external device.
 
-![osx](/assets/osx.png)
+![osx]({{ site.baseurl }}/assets/osx.png)
