@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700');
-
 body {
     color: #333;
     font-size: 1.125rem;
-    font-family: Roboto, sans-serif;
+    font-family: serif;
     line-height: 1.4;
 }
 
@@ -20,7 +18,7 @@ nav {
 }
 
 pre, code {
-    font-family: "Roboto Mono", monospace;
+    font-family: monospace;
 }
 
 pre code, img {
