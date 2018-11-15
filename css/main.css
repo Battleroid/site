@@ -1,8 +1,7 @@
 body {
     color: #333;
-    font-size: 1.125rem;
     font-family: serif;
-    line-height: 1.4;
+    line-height: 1.2;
 }
 
 main {
@@ -30,7 +29,6 @@ pre code {
     overflow: auto;
     display: block;
     background: #eee;
-    font-size: 14px;
     white-space: pre;
     word-wrap: normal;
 }
@@ -61,7 +59,7 @@ header + hr {
 
 p code, li code {
     color: green;
-    font-size: 16px;
+    font-size: 1.125rem;
 }
 
 img {
