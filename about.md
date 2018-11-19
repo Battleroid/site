@@ -11,7 +11,7 @@ Graduation day with my family
 
 My name is Casey Weed. I graduated from Armstrong State University with my bachelor's in IT and am currently employed at Mailchimp as a Data Engineer on the Search team.
 
-Just so you know, I'm not an English major, so expect my writing to be terrible. Maybe I'll get better if I write more, who knows.
+I'm not a writer, so expect my writing to be terrible. Maybe I'll get better if I write more, who knows.
 
 Here's some stuff junk you might be interested in and other useless facts:
 
