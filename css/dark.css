@@ -1,5 +1,5 @@
 body {
-    color: #d6d6d6;
+    color: #b3b3b3;
     font-family: serif;
     line-height: 1.2;
     background: #1b1b1b;
@@ -40,7 +40,7 @@ section p, article p {
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
     text-decoration: none;
-    color: #d6d6d6;
+    color: #b3b3b3;
 }
 
 a {
@@ -59,8 +59,8 @@ header + hr {
     margin: 3rem auto;
     width: 30%;
     background: none;
-    border-top: 3px double #d6d6d6;
-    border-bottom: 1px solid #d6d6d6;
+    border-top: 3px double #b3b3b3;
+    border-bottom: 1px solid #b3b3b3;
     border-left: 0;
     border-right: 0;
     height: 1px;
@@ -132,6 +132,6 @@ sub {
 
 abbr[title], acronym[title] {
     text-decoration: none;
-    border-bottom: 1px dotted #d6d6d6;
+    border-bottom: 1px dotted #b3b3b3;
     cursor: help;
 }
