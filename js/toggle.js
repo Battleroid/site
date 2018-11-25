@@ -1,5 +1,5 @@
 (function() {
-    // set bg on page load
+    // please don't judge me by how bad this is, I don't use javascript
     var css = document.getElementById('main');
     var syntax = document.getElementById('syntax');
     var toggle = document.getElementById('toggle');
