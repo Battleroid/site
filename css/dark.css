@@ -1,45 +1,17 @@
 body {
     color: #b3b3b3;
-    font-family: serif;
-    line-height: 1.2;
     background: #1b1b1b;
-}
-
-main {
-    max-width: 35rem;
-    padding: 1rem 5vw 1rem;
-    margin: 0 auto;
 }
 
 nav {
     background: #000;
-    padding: 0.5rem;
-    display: inline-block;
-}
-
-pre, code {
-    font-family: monospace;
-}
-
-pre code, img {
-    border-radius: 3px;
 }
 
 pre code {
-    padding: 1em;
-    overflow: auto;
-    display: block;
     background: #000;
-    white-space: pre;
-    word-wrap: normal;
-}
-
-section p, article p {
-    text-align: justify;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
-    text-decoration: none;
     color: #b3b3b3;
 }
 
@@ -51,87 +23,29 @@ a:visited {
   color: darkcyan;
 }
 
-article header {
-    text-align: center;
-}
-
 header + hr {
-    margin: 3rem auto;
-    width: 30%;
-    background: none;
     border-top: 3px double #b3b3b3;
     border-bottom: 1px solid #b3b3b3;
-    border-left: 0;
-    border-right: 0;
-    height: 1px;
 }
 
 p code, li code {
     color: lightgreen;
-    font-size: 1.125rem;
-}
-
-img {
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-}
-
-ul.posts time, article header time {
-    font-style: italic;
-}
-
-ul.posts li div {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-}
-
-ul.posts a {
-    flex-grow: 2;
-}
-
-ul.posts time {
-    flex-shrink: 0;
-}
-
-blockquote {
-    font-style: italic;
-}
-
-.caption {
-    text-align: center;
-    font-style: italic;
-    width: 80%;
-    margin: 1em auto;
 }
 
 div.footnotes li:target {
     background: #313027;
 }
 
-sup, sub {
-  vertical-align: baseline;
-  position: relative;
-  top: -0.4em;
-}
-
-sub {
-  top: 0.4em;
+abbr[title], acronym[title] {
+    border-bottom: 1px dotted #333;
 }
 
 @media print {
-    main {
-        max-width: 100%;
+    body {
+        background: none;
+        color: #333;
     }
-    pre code {
-        white-space: pre-wrap;
+    nav {
+        background: #333;
     }
-}
-
-abbr[title], acronym[title] {
-    text-decoration: none;
-    border-bottom: 1px dotted #b3b3b3;
-    cursor: help;
 }

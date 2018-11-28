@@ -1,0 +1,32 @@
+body {
+    color: #333;
+}
+
+nav {
+    background: #eee;
+}
+
+pre code {
+    background: #eee;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: #333;
+}
+
+header + hr {
+    border-top: 3px double #333;
+    border-bottom: 1px solid #333;
+}
+
+p code, li code {
+    color: green;
+}
+
+div.footnotes li:target {
+    background: lemonchiffon;
+}
+
+abbr[title], acronym[title] {
+    border-bottom: 1px dotted #333;
+}

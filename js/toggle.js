@@ -1,18 +1,18 @@
 (function() {
     // please don't judge me by how bad this is, I don't use javascript
-    var css = document.getElementById('main');
+    var color = document.getElementById('color');
     var syntax = document.getElementById('syntax');
     var toggle = document.getElementById('toggle');
     toggle.text = "darker";
     if (document.cookie.indexOf("bg=") != -1) {
         switch (document.cookie.split('bg=')[1]) {
-            case 'main':
-                css.setAttribute('href', '/css/main.css');
+            case 'light':
+                color.setAttribute('href', '/css/light.css');
                 syntax.setAttribute('href', '/css/github.css');
                 toggle.text = "darker";
                 break;
             case 'dark':
-                css.setAttribute('href', '/css/dark.css');
+                color.setAttribute('href', '/css/dark.css');
                 syntax.setAttribute('href', '/css/default.css');
                 toggle.text = "lighter";
                 break;
@@ -20,22 +20,17 @@
     }
 })();
 
-function toggle () {
-    var css = document.getElementById('main');
+function toggle() {
     var syntax = document.getElementById('syntax');
+    var color = document.getElementById('color');
     var toggle = document.getElementById('toggle');
-    switch (css.href.split('/').pop()) {
-        case 'main.css':
-            css.setAttribute('href', '/css/dark.css');
-            syntax.setAttribute('href', '/css/default.css');
-            document.cookie = "bg=dark;domain=.caseyweed.com;path=/";
-            toggle.text = "lighter";
-            break;
-        case 'dark.css':
-            css.setAttribute('href', '/css/main.css');
-            syntax.setAttribute('href', '/css/github.css');
-            document.cookie = "bg=main;domain=.caseyweed.com;path=/";
-            toggle.text = "darker";
-            break;
-    }
+    var current = color.href.split('/').pop().split('.')[0];
+    var desiredColor = current === 'light' ? 'dark' : 'light';
+    var desiredSyntax = current === 'light' ? 'default' : 'github';
+    var toggleText = current === 'light' ? 'lighter' : 'darker';
+    console.log(`${current}, ${desiredColor}, ${desiredSyntax}, ${toggleText}`);
+    color.href = `/css/${desiredColor}.css`;
+    syntax.href = `/css/${desiredSyntax}.css`;
+    document.cookie = `bg=${desiredColor};domain=.caseyweed.com;path=/`;
+    toggle.text = toggleText;
 }
