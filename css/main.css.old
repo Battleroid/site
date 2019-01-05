@@ -6,11 +6,12 @@ body {
     color: #333;
     font-family: serif;
     font-size: 1rem;
+    line-height: 1.2;
 }
 
 main {
     max-width: 35em;
-    padding: 1rem 3vw 1rem;
+    padding: 1rem 5vw 1rem;
     margin: 0 auto;
 }
 
@@ -41,10 +42,6 @@ section p, article p {
     text-align: justify;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: sans-serif;
-}
-
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     text-decoration: none;
     color: #333;
@@ -67,6 +64,7 @@ header + hr {
 
 p code, li code {
     color: green;
+    font-size: 1.1em;
 }
 
 img {
@@ -76,7 +74,7 @@ img {
     text-align: center;
 }
 
-article header time {
+ul.posts time, article header time {
     font-style: italic;
 }
 
@@ -92,7 +90,10 @@ ul.posts a {
 
 ul.posts time {
     flex-shrink: 0;
-    padding-right: 1em;
+}
+
+ul.posts li:hover {
+    background: #eee;
 }
 
 blockquote {
@@ -125,6 +126,12 @@ abbr[title], acronym[title] {
     border-bottom: 1px dotted #333;
     cursor: help;
 }
+
+/*
+@media only screen and (max-device-width: 480px) {
+
+}
+*/
 
 @media print {
     main {
