@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700');
+
 html {
     font-size: 100%;
 }
 
 body {
     color: #333;
-    font-family: serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
+    line-height: 1.4;
 }
 
 main {
@@ -21,7 +24,8 @@ nav {
 }
 
 pre, code {
-    font-family: monospace;
+    font-size: 0.85rem;
+    font-family: 'Roboto Mono', monospace;
 }
 
 pre code, img {
@@ -42,7 +46,7 @@ section p, article p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
