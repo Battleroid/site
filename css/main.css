@@ -1,12 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,700');
-
-html {
-    font-size: 100%;
-}
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i,700|IBM+Plex+Sans:400,400i,700,700i');
 
 body {
-    color: #333;
-    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 1rem;
     line-height: 1.4;
 }
@@ -23,17 +19,12 @@ nav {
     display: inline-block;
 }
 
-pre, code {
-    font-size: 0.85rem;
-    font-family: 'Roboto Mono', monospace;
-}
-
-pre code, img {
-    border-radius: 3px;
+pre, code, ul.posts time {
+    font: 0.85rem 'IBM Plex Mono', monospace;
 }
 
 pre code {
-    padding: 0.75em;
+    padding: 0.25em 0.5em;
     overflow: auto;
     display: block;
     background: #eee;
@@ -41,36 +32,44 @@ pre code {
     word-wrap: normal;
 }
 
-section p, article p {
+p {
     text-align: justify;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', sans-serif;
 }
 
 a {
     font-weight: bold;
 }
 
+/* normalize the user agent stylehseet */
+h1, h2, h3, h4, h5, h6 {
+    margin: 1em 0;
+}
+
+h1 { font-size: 1.5em; }
+h2 { font-size: 1.25em; }
+h3 { font-size: 1em; }
+h4 { font-size: 0.8em; }
+h5 { font-size: 0.6em; }
+h6 { font-size: 0.4em; }
+
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     text-decoration: none;
-    color: #333;
+    color: black;
 }
 
 article header {
     text-align: center;
 }
 
+hr {
+    background: #ddd;
+    border: none;
+    height: 3px;
+}
+
 header + hr {
     margin: 3rem auto;
     width: 30%;
-    background: none;
-    border-top: 3px double #333;
-    border-bottom: 1px solid #333;
-    border-left: 0;
-    border-right: 0;
-    height: 1px;
 }
 
 p code, li code {
@@ -126,7 +125,8 @@ sub {
 
 abbr[title], acronym[title] {
     text-decoration: none;
-    border-bottom: 1px dotted #333;
+    border-bottom: 1px dashed #333;
+    /* box-shadow: 0px -4px 0px inset #ffdf88; */
     cursor: help;
 }
 

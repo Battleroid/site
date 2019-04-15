@@ -79,7 +79,7 @@ We learned much from this, and in an odd way this was the perfect storm. We had 
 
 To get down to it though, we learned that our methodology for restoring and backfilling had some serious problems. The infrastructure and configuration also had some problems that needed tweaked.
 
-### 1. Restoring a full snapshot wasn't feasible
+## 1. Restoring a full snapshot wasn't feasible
 
 It turns out the nginx configuration for the load balancers, as part of our default nginx configuration we cache objects over a specified size. As a result, when ES is reaching out for thousands of objects gigabytes in size, most of these objects are immediately written to disk from memory and passed off.
 
@@ -87,7 +87,7 @@ Not only is it thrashing the root SSD for the LBs, but if it can't fetch it fast
 
 There's still time outs due to how many objects ES is requesting, and with no way to limit the number of shards, indices, or chunks it tries to fetch at any given time there's a real risk in DDoSing the LBs with larger clusters like this one.
 
-### 2. Snapshotting the entire cluster isn't feasible
+## 2. Snapshotting the entire cluster isn't feasible
 
 Unfortunately, at least for this cluster we had to hop off the Ceph storage, for ES it just has too many hiccups, takes too long and puts a strain on the LBs any time the cluster needs to dump. We've tried a couple various solutions, even chunking snapshot jobs based on shard counts to split one daily index into `N` chunks to make restoring and snapshotting less of a fragile procedure.[^2]
 
@@ -97,7 +97,7 @@ Setup is still a pain as it is managed entirely through the keystore manager, wh
 
 To avoid complications with taking a full backup, we instead snapshot the previous days data once every day. The current days data can be backfilled from ceph with the entire contents restored wholesale from GCS.
 
-### 3. Backfilling with Logstash was incredibly slow
+## 3. Backfilling with Logstash was incredibly slow
 
 After that week I spent some time working on a new backfill strategy centered around Filebeat. Instead to backfill we now use a utility that:
 
@@ -124,7 +124,7 @@ This method is able to backfill the same day period in generally less than a few
 
 Aside from the ugly invocation to create the job, it works. There's probably a better way, but for now, this suits us as we generally only backfill gaps occasionally.
 
-### 4. Decommissioning needs to be standardized
+## 4. Decommissioning needs to be standardized
 
 As mentioned, the same week the cluster decided to delete itself was the same week I had just finished a tool that would decommission entire clusters for us. Due to the weirdness that we encountered I added the ability to pick individual hosts and nodes.
 

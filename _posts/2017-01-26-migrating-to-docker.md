@@ -37,7 +37,7 @@ For example, my friends were itching to get back into Minecraft with a couple pl
 
 Here's one of the YAML files using an existing comprehensive image.
 
-```yaml
+```
 biome:
     image: itzg/minecraft-server
     ports:
