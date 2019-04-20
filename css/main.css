@@ -24,12 +24,13 @@ pre, code, ul.posts time {
 }
 
 pre code {
-    padding: 0.25em 0.5em;
+    padding: 0.5em;
     overflow: auto;
     display: block;
-    background: #eee;
+    background: FloralWhite;
     white-space: pre;
     word-wrap: normal;
+    border: 1px dotted AntiqueWhite;
 }
 
 p {
