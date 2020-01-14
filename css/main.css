@@ -1,36 +1,31 @@
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i,700|IBM+Plex+Sans:400,400i,700,700i');
-
 body {
     color: black;
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 1rem;
-    line-height: 1.4;
+    font-family: serif;
+    font-size: 18px;
+    line-height: 1.2;
 }
 
 main {
     max-width: 35em;
-    padding: 1rem 3vw 1rem;
+    padding: 1em 3vw 1em;
     margin: 0 auto;
 }
 
 nav {
-    background: #eee;
-    padding: 0.5rem;
     display: inline-block;
 }
 
 pre, code, ul.posts time {
-    font: 0.85rem 'IBM Plex Mono', monospace;
+    font: 16px monospace;
 }
 
 pre code {
-    padding: 0.5em;
+    padding: 8px;
     overflow: auto;
     display: block;
-    background: FloralWhite;
+    background: #eee;
     white-space: pre;
     word-wrap: normal;
-    border: 1px dotted AntiqueWhite;
 }
 
 p {
