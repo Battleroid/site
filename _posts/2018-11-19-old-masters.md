@@ -11,7 +11,7 @@ Back in May, we had the worst possible scenario occur with one of our largest El
 
 I remember the initial discovery because it was a Friday, I was of course playing competitive in Overwatch. My coworker got paged that the cluster had gone red for over a period of 30 minutes. Soon after I get a message from him along the lines of:
 
-> "Hey, can you take a look at this? Does this look right to you? 22k unassigned shards, 0% active primaries."
+> Hey, can you take a look at this? Does this look right to you? 22k unassigned shards, 0% active primaries.
 
 Stunned, still playing my game, I replied I could take a look after I finish (lose) my game. Eventually I busted out my laptop, hopped on and took a look for myself.
 
