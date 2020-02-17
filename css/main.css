@@ -1,7 +1,7 @@
 body {
     font-family: serif;
     font-size: 16px;
-    background: #f5f3ed;
+    background: #f3efe2;
 }
 
 main {
@@ -22,7 +22,8 @@ pre code {
     padding: 8px;
     overflow: auto;
     display: block;
-    background: #e6e6e6;
+    /* background: #e6e6e6; */
+    background: #e2decf;
     white-space: pre;
     word-wrap: normal;
 }
@@ -32,7 +33,7 @@ p {
 }
 
 a {
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 blockquote {
@@ -72,12 +73,14 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     color: black;
 }
 
-article header {
-    text-align: center;
+header h1 {
+    margin-bottom: 0em;
 }
 
-p code, li code {
+p code, li code, samp, kbd {
     color: green;
+    /* background: #e2decf;
+    padding: 2px 4px; */
 }
 
 img {
@@ -89,6 +92,8 @@ img {
 
 article header time {
     font-style: italic;
+    display: inline-block;
+    margin-top: 0em;
 }
 
 ul.posts li div {
@@ -109,7 +114,7 @@ ul.posts time {
 .caption {
     text-align: center;
     font-style: italic;
-    width: 80%;
+    width: 90%;
     margin: 1em auto;
 }
 
@@ -143,4 +148,13 @@ abbr[title], acronym[title] {
         font-size: 11px;
         white-space: pre-wrap;
     }
+}
+
+.highlight .c1 {
+    font-style: italic;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
