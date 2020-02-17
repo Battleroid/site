@@ -23,7 +23,9 @@ pre code {
     overflow: auto;
     display: block;
     /* background: #e6e6e6; */
-    background: #e2decf;
+    /* background: #e2decf; */
+    background: #111;
+    color: #eee;
     white-space: pre;
     word-wrap: normal;
 }
@@ -78,9 +80,11 @@ header h1 {
 }
 
 p code, li code, samp, kbd {
-    color: green;
-    /* background: #e2decf;
-    padding: 2px 4px; */
+    /* color: green; */
+    color: #eee;
+    background: #111;
+    padding: 1px 3px;
+    /* background: #e2decf; */
 }
 
 img {
@@ -152,6 +156,7 @@ abbr[title], acronym[title] {
 
 .highlight .c1 {
     font-style: italic;
+    color: #aaa;
 }
 
 table {
