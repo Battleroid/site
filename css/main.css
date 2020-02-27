@@ -1,6 +1,5 @@
 body {
     font-family: serif;
-    font-size: 16px;
     background: #f3efe2;
 }
 
@@ -22,8 +21,6 @@ pre code {
     padding: 8px;
     overflow: auto;
     display: block;
-    /* background: #e6e6e6; */
-    /* background: #e2decf; */
     background: #111;
     color: #eee;
     white-space: pre;
@@ -32,10 +29,6 @@ pre code {
 
 p {
     text-align: justify;
-}
-
-a {
-    /* font-weight: bold; */
 }
 
 blockquote {
@@ -80,11 +73,9 @@ header h1 {
 }
 
 p code, li code, samp, kbd {
-    /* color: green; */
     color: #eee;
     background: #111;
     padding: 1px 3px;
-    /* background: #e2decf; */
 }
 
 img {
@@ -139,7 +130,6 @@ sub {
 abbr[title], acronym[title] {
     text-decoration: none;
     border-bottom: 1px dashed #333;
-    /* box-shadow: 0px -4px 0px inset #ffdf88; */
     cursor: help;
 }
 
@@ -151,12 +141,22 @@ abbr[title], acronym[title] {
     pre code {
         font-size: 11px;
         white-space: pre-wrap;
+        color: black;
+        background: none;
+    }
+
+    pre, code, samp, kbd {
+        color: black;
     }
 }
 
 .highlight .c1 {
     font-style: italic;
     color: #aaa;
+}
+
+.highlight .nf, .highlight .nc {
+    font-weight: bold;
 }
 
 table {
